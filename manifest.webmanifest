@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "PSPM QUEST | AP015 Revision",
+  "short_name": "PSPM QUEST",
+  "description": "Quiz, memory flip dan essay builder Perniagaan AP015.",
+  "lang": "ms",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2458e8",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
