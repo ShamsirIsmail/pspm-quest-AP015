@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <!-- Bottom Book Spine (Primary Navy) -->
+  <path d="M110 380 C160 354, 212 354, 256 376 C300 354, 352 354, 402 380 C410 384, 418 378, 418 368 L418 350 C418 343, 412 337, 404 333 C358 310, 308 310, 256 332 C204 310, 154 310, 108 333 C100 337, 94 343, 94 350 L94 368 C94 378, 102 384, 110 380 Z" fill="#020617"/>
+
+  <!-- Left Open Page (Brand Blue #2458E8) -->
+  <path d="M244 136 C184 116, 130 122, 94 139 C86 143, 80 151, 80 161 L80 312 C80 322, 90 329, 100 325 C136 311, 186 305, 244 322 Z" fill="#2458E8"/>
+
+  <!-- Right Open Page (Secondary Blue #2C7FFF) -->
+  <path d="M268 136 C328 116, 382 122, 418 139 C426 143, 432 151, 432 161 L432 312 C432 322, 422 329, 412 325 C376 311, 326 305, 268 322 Z" fill="#2C7FFF"/>
+
+  <!-- Right Page Subtle White Reading Lines -->
+  <rect x="330" y="238" width="60" height="11" rx="5.5" fill="#FFFFFF" opacity="0.4"/>
+  <rect x="330" y="262" width="42" height="11" rx="5.5" fill="#FFFFFF" opacity="0.3"/>
+
+  <!-- Checkmark Emblem Rising in High Contrast Navy & White -->
+  <path d="M174 234 L238 298 C248 308, 264 308, 274 298 L384 164"
+        stroke="#020617" stroke-width="50" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M174 234 L238 298 C248 308, 264 308, 274 298 L384 164"
+        stroke="#FFFFFF" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

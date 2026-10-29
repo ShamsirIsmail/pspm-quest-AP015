@@ -1,22 +1,24 @@
-# PSPM QUEST V4.1 | PWA (AP015)
+# PSPM QUEST V5.1 | PWA (AP015)
 
-## Cara buka segera tanpa hosting
-Buka fail `PSPM_QUEST_V4_1_Standalone.html` dalam browser. Ia boleh digunakan tanpa database dan tanpa internet. **Fail HTML setempat bukan pemasangan PWA penuh.**
+Aplikasi mudah alih ulang kaji Pengajian Perniagaan AP015 Matrikulasi Malaysia.
+Mengandungi 194 soalan latih tubi, 66 latihan rangka esei, kad ingatan dan formula pengiraan.
 
-## Cara jadikan app boleh dipasang
-1. Upload **semua fail dalam folder ini** ke hosting HTTPS (contohnya GitHub Pages / Netlify / Cloudflare Pages), dengan `index.html` di root laman.
-2. Pastikan `index.html`, `manifest.webmanifest`, `sw.js` dan folder `icons/` berada pada path yang sama seperti dalam ZIP.
-3. Buka URL HTTPS pada telefon. Tekan `Cara pasang` di bahagian bawah home screen.
-4. Android Chrome: Jika browser menyediakan install prompt, tekan `Install PSPM QUEST`. Jika tidak, buka menu browser > `Install app` / `Add to Home Screen`.
-5. iPhone Safari: Buka halaman > Share > Add to Home Screen > Open as Web App > Add. Langkah perlu dibuat secara manual; website tidak boleh buka dialog Add to Home Screen iPhone secara automatik.
-6. Buka aplikasi sekali semasa internet tersedia supaya service worker dapat menyimpan fail untuk penggunaan offline seterusnya.
+## Cara Buka Segera (Luar Talian / Setempat)
+Buka fail `index.html` menggunakan pelayar web (Google Chrome / Safari / Edge). Aplikasi boleh terus digunakan tanpa pangkalan data dan tanpa internet.
 
-## Database
-Tidak perlu database untuk penggunaan peribadi/1 peranti. Semua 194 soalan kuiz, 66 Essay Builder dan progress tersimpan pada browser menggunakan localStorage. Tiada sync atau akaun pengguna. Kos hosting statik boleh sifar.
+## Cara Jadikan Aplikasi Boleh Dipasang (PWA)
+1. Muat naik semua fail dalam folder ini ke perkhidmatan hosting HTTPS (contohnya GitHub Pages, Netlify, atau Cloudflare Pages), dengan `index.html` berada pada direktori utama (root).
+2. Pastikan `index.html`, `manifest.webmanifest`, `sw.js` dan folder `icons/` berada pada susunan direktori yang sama.
+3. Buka URL HTTPS pada telefon pintar anda. Tekan butang `Panduan Pasang ↗` pada halaman utama aplikasi.
+4. **Android (Chrome)**: Jika pelayar memaparkan dialog pemasangan, tekan `Pasang PSPM QUEST`. Jika tidak, tekan menu tiga titik (⋮) pelayar > pilih `Pasang aplikasi (Install app)` atau `Tambah ke Skrin Utama`.
+5. **iPhone (Safari)**: Buka pautan dalam Safari > tekan ikon `Kongsi (Share)` > pilih `Tambah ke Skrin Utama (Add to Home Screen)` > tekan `Tambah (Add)`.
+6. Buka aplikasi sekali semasa sambungan internet tersedia supaya Service Worker dapat menyimpan fail cache untuk kegunaan luar talian sepenuhnya.
 
-## Perhatian
-- Soalan ialah latihan revision berdasarkan nota, bukan soalan rasmi/ramalan peperiksaan.
-- Progress akan hilang jika data laman/browser dipadam. Progress PWA dan browser mungkin berbeza mengikut platform.
-- Untuk update soalan, ganti fail dan ubah versi CACHE dalam `sw.js` untuk aktifkan fail baharu.
+## Pangkalan Data & Storan
+Tiada pelayan atau pangkalan data luar diperlukan. Semua 194 soalan kuiz, 66 cabaran esei, dan kemajuan rekod pembelajaran disimpan secara setempat dalam pelayar menggunakan `localStorage`. Tiada akaun pengguna diperlukan dan kos pengehosan statik adalah percuma.
 
-V4.1: Arahan Memory Flip boleh ditutup (tetapan disimpan pada peranti) dan feedback jawapan salah lebih mesra.
+## Pembaharuan Versi 5.1 (V5.1 - Final QA & Deployment Release)
+- Pengesahan Kandungan Akademik: 194 soalan kuiz (146 teori + 48 formula pengiraan) dan 66 cabaran esei disahkan 100% bebas ralat matematik, duplikasi atau pilihan jawapan kosong.
+- Ketahanan PWA & Subdirektori: Diuji dan disahkan serasi sepenuhnya dengan GitHub Pages (`/pspm-quest-AP015/`).
+- Pengemaskinian Cache Pintar: Service Worker `pspm-quest-v5.1-offline-1` dengan strategi Network-First untuk navigasi memastikan pengguna V4.1 sedia ada menerima kandungan terkini secara automatik tanpa perlu buang aplikasi atau hilang rekod kemajuan.
+- Responsif Menyeluruh: Diuji pada resolusi 320px, 375px, 390px, 430px dan paparan desktop tanpa sebarang limpahan mendatar (horizontal overflow).
